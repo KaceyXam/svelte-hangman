@@ -45,7 +45,7 @@
     {/if}
   </h1>
   <HangmanDrawing guessesWrong={incorrectLetters.length} />
-  <HangmanWord wordToGuess={randomWord} guessedLetters={guessedLetters} />
+  <HangmanWord wordToGuess={randomWord} guessedLetters={guessedLetters} lost={isLoser} />
   <Keyboard 
     guessedLetters={guessedLetters.filter(letter => randomWord.includes(letter))} 
     incorrectLetters={incorrectLetters} 
