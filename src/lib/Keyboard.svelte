@@ -49,9 +49,12 @@
 
 <style lang="scss">
   div {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: .5em;
+    max-width: 700px;
     button {
       text-transform: uppercase;
       font-size: 1.5rem;
